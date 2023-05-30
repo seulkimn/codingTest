@@ -11,7 +11,7 @@ public class Main {
         	M = M-45;
         }else if (M <45 ) {
         	H--;
-        	M = (60-45) + M;
+        	M = 60-45+M;
         	if (H < 0) {
         		H = 23;
         	}
