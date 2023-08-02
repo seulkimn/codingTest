@@ -25,8 +25,8 @@ class Solution {
         }
         
         int stk[]=new int[tmp.size()];
-        for(int k=0;k<tmp.size();k++){
-            stk[k]=tmp.get(k).intValue();
+        for(int j=0; j<tmp.size(); j++){
+            stk[j]=tmp.get(j).intValue();
         }
         return stk;
     }
