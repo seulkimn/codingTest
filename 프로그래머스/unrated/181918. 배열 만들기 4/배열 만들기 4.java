@@ -24,10 +24,8 @@ class Solution {
             
         }
         
-        int stk[]=new int[tmp.size()];
-        for(int j=0; j<tmp.size(); j++){
-            stk[j]=tmp.get(j).intValue();
-        }
+       int[] stk = tmp.stream().mapToInt(j -> j).toArray();
+        
         return stk;
     }
 }
