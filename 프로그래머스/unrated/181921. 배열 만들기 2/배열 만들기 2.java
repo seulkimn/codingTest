@@ -15,8 +15,13 @@ class Solution {
                 list.add(i);
             }
         }
-        int[] answer = list.stream().mapToInt(i->i).toArray();
+        int[] answer = new int[list.size()];
+        for(int i = 0; i< list.size(); i++){ 
+            answer[i] = list.get(i);
+        } 
+        
         int[] empty = {-1};
+        
         if(answer.length == 0) return empty;
         return answer;
     }
